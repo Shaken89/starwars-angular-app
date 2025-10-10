@@ -1,10 +1,9 @@
-/* Чистый чёрный фон */
 html, body {
   margin: 0;
   padding: 0;
   height: 100%;
-  background-color: black; /* просто чёрный фон */
-  color: white;           /* белый текст */
+  background-color: black; 
+  color: white;
   font-family: 'Orbitron', sans-serif;
   overflow-x: hidden;
 }
