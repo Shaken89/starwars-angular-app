@@ -1,0 +1,9 @@
+<div class="character-list">
+  <button (click)="loadCharacters()">Load Characters</button>
+
+  <div *ngIf="loading">Loading...</div>
+
+  <ul *ngIf="!loading">
+    <li *ngFor="let c of characters">{{ c.name }}</li>
+  </ul>
+</div>

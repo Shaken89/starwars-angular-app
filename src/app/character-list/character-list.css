@@ -1,0 +1,16 @@
+.character-list {
+  padding: 10px;
+}
+
+button {
+  background-color: #222;
+  color: #fff;
+  border: 1px solid #555;
+  padding: 6px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #444;
+}
