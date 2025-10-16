@@ -1,4 +1,45 @@
 .character-list {
+  max-width: 400px;
+  margin: 40px auto;
+  background: #111;
+  color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  font-family: Arial, sans-serif;
+}
+
+.character-list h2 {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+input {
+  width: 100%;
+  padding: 8px 10px;
+  margin: 10px 0 15px 0;
+  border: 1px solid #555;
+  border-radius: 4px;
+  background-color: #222;
+  color: #fff;
+}
+
+input:focus {
+  outline: none;
+  border-color: #888;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  padding: 8px;
+  border-bottom: 1px solid #333;
+}
+
+.loading {
+  text-align: center;
   padding: 10px;
 }
 
@@ -9,6 +50,7 @@ button {
   padding: 6px 12px;
   border-radius: 4px;
   cursor: pointer;
+  width: 100%;
 }
 
 button:hover {

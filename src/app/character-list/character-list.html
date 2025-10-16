@@ -1,9 +1,20 @@
 <div class="character-list">
+
   <button (click)="loadCharacters()">Load Characters</button>
 
-  <div *ngIf="loading">Loading...</div>
+  <input
+    type="text"
+    placeholder="Search characters..."
+    (input)="onSearch($event.target.value)"
+  />
 
-  <ul *ngIf="!loading">
+  <div *ngIf="loading" class="loading">Loading...</div>
+
+  <ul *ngIf="!loading && characters.length > 0">
     <li *ngFor="let c of characters">{{ c.name }}</li>
   </ul>
+
+  <div *ngIf="!loading && characters.length === 0 && lastSearchTerm">
+    No results found for "{{ lastSearchTerm }}"
+  </div>
 </div>
